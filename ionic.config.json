@@ -1,0 +1,7 @@
+{
+  "name": "ChimeApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
