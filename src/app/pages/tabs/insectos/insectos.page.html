@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Insectos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let i of cards">
+    <ion-card-header>
+      <div style="display: flex;">
+        <ion-avatar><img src="{{i.avatar}}"/></ion-avatar>
+        <hr>
+        <ion-button>¡Me gusta!</ion-button>
+      </div>
+      <ion-card-title>{{i.name}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>{{i.info}}</p>
+      <img src="{{i.img}}"/>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button></ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button href="https://animalcrossing.fandom.com/wiki/Animal_Crossing_Wiki">
+        <ion-icon name="arrow-undo-circle-outline"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button href="https://animalcrossing.fandom.com/wiki/Animal_Crossing_Wiki">
+        <ion-icon name="arrow-undo-circle-outline"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button href="https://animalcrossing.fandom.com/wiki/Animal_Crossing_Wiki">
+        <ion-icon name="arrow-undo-circle-outline"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+    </ion-fab>
+</ion-content>

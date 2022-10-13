@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Herramientas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list [inset]="true">
+    <ion-item *ngFor="let i of items;">
+      <ion-label>{{ i.name }}</ion-label>
+      <ion-avatar><img src="{{i.src}}"/></ion-avatar>
+      <ion-checkbox style="margin-left: 3%;"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+</ion-content>

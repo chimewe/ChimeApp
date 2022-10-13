@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Aldeanos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list [inset]="true">
+    <ion-item>
+      <ion-label>Canela</ion-label>
+      <ion-avatar>
+        <img src='/assets/isabelle.png' />
+      </ion-avatar>
+      <ion-item>
+        <ion-checkbox [(ngModel)]="box1" (click)="presentToast('Canela',box1)" ></ion-checkbox>
+      </ion-item>
+    </ion-item>
+    <ion-item>
+      <ion-label>Tom Nook</ion-label>
+      <ion-avatar>
+        <img src='/assets/tom.png' />
+      </ion-avatar>
+      <ion-item>
+        <ion-checkbox [(ngModel)]="box2" (click)="presentToast('Tom Nook',box2)"></ion-checkbox>
+      </ion-item>
+    </ion-item>
+    <ion-item>
+      <ion-label>Tendo y Nendo</ion-label>
+      <ion-avatar>
+        <img src='/assets/tendonendo.jpg' />
+      </ion-avatar>
+      <ion-item>
+        <ion-checkbox [(ngModel)]="box3" (click)="presentToast('Tendo y Nendo',box3)"></ion-checkbox>
+      </ion-item>
+    </ion-item>
+    <ion-item>
+      <ion-label>Pili y Mili</ion-label>
+      <ion-avatar>
+        <img src='/assets/milipili.png' />
+      </ion-avatar>
+      <ion-item>
+        <ion-checkbox [(ngModel)]="box4" (click)="presentToast('Pili y Mili',box4)"></ion-checkbox>
+      </ion-item>
+    </ion-item>
+    <ion-item>
+      <ion-label>Sócrates</ion-label>
+      <ion-avatar>
+        <img src='/assets/socrates.jpg' />
+      </ion-avatar>
+      <ion-item>
+        <ion-checkbox [(ngModel)]="box5" (click)="presentToast('Sócrates',box5)"></ion-checkbox>
+      </ion-item>
+    </ion-item>
+  </ion-list>
+</ion-content>
